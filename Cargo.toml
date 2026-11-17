@@ -5,13 +5,7 @@ edition = "2024"
 rust-version = "1.99.1"
 
 [dependencies]
-tdlib-rs = { version = "1.4", features = ["download-tdlib"] }
+tdlib-rs = { version = "=1.4.0", features = ["local-tdlib"] }
 iced = { version = "0.14.0", features = ["tokio"] }
-grammers-client = "0.11.0"
-sqlite = "0.37.4"
-grammers-session = { version = "0.11", features = ["sqlite-storage"] }
-tokio = { version = "1", features = ["full"] }
-grammers-mtsender = "0.11.0"
-simple_logger = "5.2.0"
-log = "0.4.35"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 dotenvy = "0.15.7"
