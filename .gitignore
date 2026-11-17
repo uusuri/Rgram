@@ -1,0 +1,27 @@
+/target/
+.DS_Store
+
+# Environment and credentials
+.env
+.env.*
+*.env
+/secrets/
+/credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Telegram sessions and local databases
+*.session
+*.session-*
+*.session.*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+/tdlib/
+/tdlib-data/
+/tdata/
